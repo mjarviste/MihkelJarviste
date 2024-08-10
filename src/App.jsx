@@ -206,10 +206,10 @@ const App = () => {
                     <i className="css-logo"></i>
                   </div>
                   <div className="project-links">
-                    <a href="https://github.com/mjarviste/InfernoRestaurant" target="_blank">
+                    <a href="https://github.com/mjarviste/MihkelJarviste" target="_blank">
                       <i className="github-logo"></i>
                     </a>
-                    <a href="https://infernorestaurant.onrender.com" target="_blank">
+                    <a href="https://mihkeljarviste.onrender.com" target="_blank">
                       <i className="open-link-logo"></i>
                     </a>
                   </div>
