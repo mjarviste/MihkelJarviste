@@ -14,6 +14,7 @@ import vueUrl from './assets/vue.png'
 import nodejsUrl from './assets/nodejs.png'
 import pythonUrl from './assets/python.png'
 import javaUrl from './assets/java.png'
+import flagUrl from './assets/estoniaFlag.png'
 
 const App = () => {
   
@@ -37,6 +38,8 @@ const App = () => {
     document.getElementById('nodejs-img').src = nodejsUrl;
     document.getElementById('python-img').src = pythonUrl;
     document.getElementById('java-img').src = javaUrl;
+    document.getElementById('est-flag-img').src = flagUrl;
+    
 
   })
   
@@ -88,7 +91,7 @@ const App = () => {
                       <h6> Years Old</h6>
                     </div>
                     <div id="location-wrapper">
-                      <img src="../src/assets/estoniaFlag.png" alt=""></img>
+                      <img id="est-flag-img" alt=""></img>
                       <h6>Based in Estonia</h6>
                     </div>  
                   </div>
