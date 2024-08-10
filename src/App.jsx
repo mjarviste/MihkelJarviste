@@ -4,6 +4,9 @@ import githubUrl from './assets/github-logo.png'
 import linkedInUrl from './assets/linkedin-logo.png'
 import cvURL from './assets/MihkelJarviste_CV.pdf'
 import heroUrl from './assets/PortfolioHeroImg.png'
+import arrowDownUrl from './assets/red-arrow-down.png'
+import arrowUpUrl from './assets/red-arrow-up.png'
+
 
 const App = () => {
   
@@ -17,6 +20,8 @@ const App = () => {
     document.getElementById('cv-el').href = cvURL;
     document.getElementById('hero-img').src = heroUrl;
     document.getElementById('hero-img-mobile').src = heroUrl;
+    document.getElementById('red-arrow-down').src = arrowDownUrl;
+    document.getElementById('red-arrow-up').src = arrowUpUrl;
 
   })
   
@@ -106,7 +111,7 @@ const App = () => {
             </div>
           </div>
           <div onClick={toTechStack} id="arrow-down-wrapper">
-            <img src="../src/assets/red-arrow-down.png" alt=""></img>
+            <img id="red-arrow-down" alt=""></img>
           </div>
         </section>
         <section id="tech-stack">
@@ -246,7 +251,7 @@ const App = () => {
               </li>
             </ul>
             <div onClick={toHero} id="arrow-up-wrapper">
-              <img src="../src/assets/red-arrow-up.png" alt=""></img>
+              <img id="red-arrow-up" alt=""></img>
             </div>
           </div>
         </footer>
