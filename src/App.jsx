@@ -6,7 +6,14 @@ import cvURL from './assets/MihkelJarviste_CV.pdf'
 import heroUrl from './assets/PortfolioHeroImg.png'
 import arrowDownUrl from './assets/red-arrow-down.png'
 import arrowUpUrl from './assets/red-arrow-up.png'
-
+import htmlUrl from './assets/html5.png'
+import cssUrl from './assets/css.png'
+import javascriptUrl from './assets/javascript.png'
+import reactUrl from './assets/react.png'
+import vueUrl from './assets/vue.png'
+import nodejsUrl from './assets/nodejs.png'
+import pythonUrl from './assets/python.png'
+import javaUrl from './assets/java.png'
 
 const App = () => {
   
@@ -22,6 +29,14 @@ const App = () => {
     document.getElementById('hero-img-mobile').src = heroUrl;
     document.getElementById('red-arrow-down').src = arrowDownUrl;
     document.getElementById('red-arrow-up').src = arrowUpUrl;
+    document.getElementById('html-img').src = htmlUrl;
+    document.getElementById('css-img').src = cssUrl;
+    document.getElementById('javascript-img').src = javascriptUrl;
+    document.getElementById('react-img').src = reactUrl;
+    document.getElementById('vue-img').src = vueUrl;
+    document.getElementById('nodejs-img').src = nodejsUrl;
+    document.getElementById('python-img').src = pythonUrl;
+    document.getElementById('java-img').src = javaUrl;
 
   })
   
@@ -120,49 +135,49 @@ const App = () => {
             <div id="tech-stack-wrapper">
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/html5.png" alt="" className="language-img"/>
+                      <img id="html-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">HTML5</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/css.png" alt="" className="language-img"/>
+                      <img id="css-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">CSS</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/javascript.png" alt="" className="language-img"/>
+                      <img id="javascript-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">Javascript</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/python.png" alt="" className="language-img"/>
+                      <img id="python-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">Python</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/react.png" alt="" className="language-img"/>
+                      <img id="react-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">React</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/vue.png" alt="" className="language-img"/>
+                      <img id="vue-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">Vue.js</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/nodejs.png" alt="" className="language-img"/>
+                      <img id="nodejs-img"  alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">Node.js</span>
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img src="../src/assets/java.png" alt="" className="language-img"/>
+                      <img id="java-img" alt="" className="language-img"/>
                   </figure>
                   <span className="language-name">Java</span>
               </div>
