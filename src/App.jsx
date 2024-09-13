@@ -2,7 +2,7 @@ import {useEffect} from 'react'
 import instagramUrl from './assets/instagram-logo.png'
 import githubUrl from './assets/github-logo.png'
 import linkedInUrl from './assets/linkedin-logo.png'
-import cvURL from './assets/MihkelJarviste_CV.pdf'
+import cvURL from './assets/Mihkel_Jarviste_CV_ENG.pdf'
 import heroUrl from './assets/PortfolioHeroImg.png'
 import arrowDownUrl from './assets/red-arrow-down.png'
 import arrowUpUrl from './assets/red-arrow-up.png'
@@ -76,7 +76,7 @@ const App = () => {
               <div id="hero-description">
                 <div id="hero-heading-text">
                   <h3>I'm <span>Mihkel Järviste</span></h3>
-                  <h5>A Front-End Web Developer</h5>
+                  <h5>A Software Engineer</h5>
                 </div>
                 <div id="hero-btns-wrapper">
                   <a href="mailto:mjarviste@gmail.com">
@@ -110,7 +110,7 @@ const App = () => {
             <div id="hero-social-links-wrapper">
               <div id="cv-wrapper">
                 <h5>Download my CV</h5>
-                <a id='cv-el' download="Mihkel_Jarviste_CV">
+                <a id='cv-el' download="Mihkel_Jarviste_CV_ENG">
                   <button className="btn">Download CV</button>
                 </a>
               </div>
