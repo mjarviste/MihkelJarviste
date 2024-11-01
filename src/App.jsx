@@ -14,7 +14,10 @@ import vueUrl from './assets/vue.png'
 import nodejsUrl from './assets/nodejs.png'
 import pythonUrl from './assets/python.png'
 import javaUrl from './assets/java.png'
+import nextjsUrl from './assets/nextjs-logo.png'
 import flagUrl from './assets/estoniaFlag.png'
+
+
 
 const App = () => {
   
@@ -37,7 +40,7 @@ const App = () => {
     document.getElementById('vue-img').src = vueUrl;
     document.getElementById('nodejs-img').src = nodejsUrl;
     document.getElementById('python-img').src = pythonUrl;
-    document.getElementById('java-img').src = javaUrl;
+    document.getElementById('nextjs-img').src = nextjsUrl;
     document.getElementById('est-flag-img').src = flagUrl;
     
 
@@ -180,9 +183,9 @@ const App = () => {
               </div>
               <div className="language">
                   <figure className="language-img-wrapper">
-                      <img id="java-img" alt="" className="language-img"/>
+                      <img id="nextjs-img"  alt="" className="language-img"/>
                   </figure>
-                  <span className="language-name">Java</span>
+                  <span className="language-name">Next.js</span>
               </div>
             </div>
           </div>
@@ -235,6 +238,27 @@ const App = () => {
               </div>
             </div>
             <div id="project-3" className="project">
+              <div className="project-description">
+                <h6 className="project-heading">AI Chatbot using OpenAI API</h6>
+                <p className="project-paragraph">A responsive AI Chatbot using OpenAI API and Vercel SDK. The app was developed using Next.js, Typescript and Tailwind with a custom UX design.</p>
+                <div className="project-langs-links">
+                  <div className="project-langs">
+                    <i className='nextjs-logo'></i>
+                    <i className='tailwind-logo'></i>
+                    <i className="typescript-logo"></i>
+                  </div>
+                  <div className="project-links">
+                    <a href="https://github.com/mjarviste/vestlusrobot" target="_blank">
+                      <i className="github-logo"></i>
+                    </a>
+                    <a href="https://vestlusrobot.vercel.app" target="_blank">
+                      <i className="open-link-logo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="project-4" className="project">
               <div className="project-description">
                 <h6 className="project-heading"></h6>
                 <p className="project-paragraph"></p>
