@@ -2,13 +2,15 @@ import { useEffect } from "react";
 import instagramUrl from "./assets/instagram-logo.png";
 import githubUrl from "./assets/github-logo.png";
 import linkedInUrl from "./assets/linkedin-logo.png";
-import cvURL from "./assets/Mihkel-Jarviste-CV-ENG.pdf";
+import cvURL from "./assets/Mihkel-Jarviste-CV.pdf";
 import heroUrl from "./assets/PortfolioHeroImg.png";
 import arrowDownUrl from "./assets/red-arrow-down.png";
 import arrowUpUrl from "./assets/red-arrow-up.png";
 import htmlUrl from "./assets/html5.png";
 import cssUrl from "./assets/css.png";
 import javascriptUrl from "./assets/javascript.png";
+import typescriptUrl from "./assets/typescript.png";
+import mongoUrl from "./assets/mongodb.png";
 import reactUrl from "./assets/react.png";
 import vueUrl from "./assets/vue.png";
 import nodejsUrl from "./assets/nodejs.png";
@@ -33,6 +35,9 @@ const App = () => {
     document.getElementById("html-img").src = htmlUrl;
     document.getElementById("css-img").src = cssUrl;
     document.getElementById("javascript-img").src = javascriptUrl;
+    document.getElementById("typescript-img").src = typescriptUrl;
+    document.getElementById("mongo-img").src = mongoUrl;
+    document.getElementById("java-img").src = javaUrl;
     document.getElementById("react-img").src = reactUrl;
     document.getElementById("vue-img").src = vueUrl;
     document.getElementById("nodejs-img").src = nodejsUrl;
@@ -67,7 +72,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div>
       <header>
         <div id="header-wrapper">
           <h4 id="logo">mj.</h4>
@@ -164,7 +169,7 @@ const App = () => {
                       href="https://www.instagram.com/mihkeljarviste"
                       target="_blank"
                     >
-                      Instagram<img alt="" id="instagram-logo"></img>
+                      Instagram<img alt="" id="instagram-logo" ></img>
                     </a>
                   </li>
                 </ul>
@@ -176,7 +181,7 @@ const App = () => {
               <img id="hero-img" alt="Picture of Mihkel Järviste" />
             </div>
           </div>
-          <div onClick={toTechStack} id="arrow-down-wrapper">
+          <div onClick={toTechStack} id="arrow-down-wrapper" className="scroll-btn">
             <img id="red-arrow-down" alt=""></img>
           </div>
         </section>
@@ -200,7 +205,13 @@ const App = () => {
                 <figure className="language-img-wrapper">
                   <img id="javascript-img" alt="" className="language-img" />
                 </figure>
-                <span className="language-name">Javascript</span>
+                <span className="language-name">JavaScript</span>
+              </div>
+              <div className="language">
+                <figure className="language-img-wrapper">
+                  <img id="typescript-img" alt="" className="language-img" />
+                </figure>
+                <span className="language-name">TypeScript</span>
               </div>
               <div className="language">
                 <figure className="language-img-wrapper">
@@ -232,12 +243,137 @@ const App = () => {
                 </figure>
                 <span className="language-name">Next.js</span>
               </div>
+              <div className="language">
+                <figure className="language-img-wrapper">
+                  <img id="java-img" alt="" className="language-img" />
+                </figure>
+                <span className="language-name">Java</span>
+              </div>
+              <div className="language">
+                <figure className="language-img-wrapper">
+                  <img id="mongo-img" alt="" className="language-img" />
+                </figure>
+                <span className="language-name">MongoDB</span>
+              </div>
             </div>
           </div>
         </section>
         <section id="projects">
           <h3>Here are some of my projects</h3>
           <div id="projects-wrapper">
+            {/* <div id="project-2" className="project">
+              <div className="project-description">
+              <h6 className="project-heading">My Portfolio</h6>
+              <p className="project-paragraph">
+              My portfolio page built using React, Javascript, HTML and CSS
+              </p>
+              <div className="project-langs-links">
+              <div className="project-langs">
+              <i className="react-logo"></i>
+              <i className="javascript-logo"></i>
+              <i className="html-logo"></i>
+              <i className="css-logo"></i>
+              </div>
+              <div className="project-links">
+              <a
+              href="https://github.com/mjarviste/MihkelJarviste"
+              target="_blank"
+              >
+              <i className="github-logo"></i>
+              </a>
+              <a
+              href="https://mihkeljarviste.onrender.com"
+              target="_blank"
+              >
+              <i className="open-link-logo"></i>
+              </a>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div id="project-3" className="project">
+              <div className="project-description">
+              <h6 className="project-heading">AI Chatbot using OpenAI API</h6>
+              <p className="project-paragraph">
+              A responsive AI Chatbot using OpenAI API and Vercel SDK. The
+              app was developed using Next.js, Typescript and Tailwind with
+              a custom UX design.
+              </p>
+              <div className="project-langs-links">
+              <div className="project-langs">
+              <i className="nextjs-logo"></i>
+              <i className="tailwind-logo"></i>
+              <i className="typescript-logo"></i>
+              </div>
+              <div className="project-links">
+              <a
+              href="https://github.com/mjarviste/vestlusrobot"
+              target="_blank"
+              >
+              <i className="github-logo"></i>
+              </a>
+              <a href="https://vestlusrobot.vercel.app" target="_blank">
+              <i className="open-link-logo"></i>
+              </a>
+              </div>
+              </div>
+              </div>
+              </div> */}
+            <div id="project-4" className="project">
+              <div className="project-description">
+                <h6 className="project-heading">Influencer Management System</h6>
+                <p className="project-paragraph">
+                A full-stack web application built for managing influencers, their social media accounts, and assigning them to managers.
+                </p>
+                <div className="project-langs-links">
+                  <div className="project-langs">
+                    <i className="react-logo"></i>
+                    <i className="html-logo"></i>
+                    <i className="css-logo"></i>
+                    <i className="typescript-logo"></i>
+                    <i className="node-logo"></i>
+                    <i className="mongo-logo"></i>
+                  </div>
+                  <div className="project-links">
+                    <a
+                      href="https://github.com/mjarviste/InfluencerManagementSystem"
+                      target="_blank"
+                    >
+                      <i className="github-logo"></i>
+                    </a>
+                    <a href="https://influencer-frontend-two.vercel.app/" target="_blank">
+                      <i className="open-link-logo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="project-5" className="project">
+              <div className="project-description">
+                <h6 className="project-heading">Cosmos Odyssey</h6>
+                <p className="project-paragraph">
+                A full-stack web application that fetches and stores the best solar system flight deals, letting you search routes, filter companies, and reserve your journey with ease.
+                </p>
+                <div className="project-langs-links">
+                  <div className="project-langs">
+                    <i className="react-logo"></i>
+                    <i className="html-logo"></i>
+                    <i className="css-logo"></i>
+                    <i className="typescript-logo"></i>
+                    <i className="node-logo"></i>
+                    <i className="mongo-logo"></i>
+                  </div>
+                  <div className="project-links">
+                    <a
+                      href="https://github.com/mjarviste/Cosmos-Odyssey"
+                      target="_blank"
+                    >
+                      <i className="github-logo"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div id="project-1" className="project">
               <div className="project-description">
                 <h6 className="project-heading">Inferno Restaurant</h6>
@@ -269,65 +405,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div id="project-2" className="project">
-              <div className="project-description">
-                <h6 className="project-heading">My Portfolio</h6>
-                <p className="project-paragraph">
-                  My portfolio page built using React, Javascript, HTML and CSS
-                </p>
-                <div className="project-langs-links">
-                  <div className="project-langs">
-                    <i className="react-logo"></i>
-                    <i className="javascript-logo"></i>
-                    <i className="html-logo"></i>
-                    <i className="css-logo"></i>
-                  </div>
-                  <div className="project-links">
-                    <a
-                      href="https://github.com/mjarviste/MihkelJarviste"
-                      target="_blank"
-                    >
-                      <i className="github-logo"></i>
-                    </a>
-                    <a
-                      href="https://mihkeljarviste.onrender.com"
-                      target="_blank"
-                    >
-                      <i className="open-link-logo"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="project-3" className="project">
-              <div className="project-description">
-                <h6 className="project-heading">AI Chatbot using OpenAI API</h6>
-                <p className="project-paragraph">
-                  A responsive AI Chatbot using OpenAI API and Vercel SDK. The
-                  app was developed using Next.js, Typescript and Tailwind with
-                  a custom UX design.
-                </p>
-                <div className="project-langs-links">
-                  <div className="project-langs">
-                    <i className="nextjs-logo"></i>
-                    <i className="tailwind-logo"></i>
-                    <i className="typescript-logo"></i>
-                  </div>
-                  <div className="project-links">
-                    <a
-                      href="https://github.com/mjarviste/vestlusrobot"
-                      target="_blank"
-                    >
-                      <i className="github-logo"></i>
-                    </a>
-                    <a href="https://vestlusrobot.vercel.app" target="_blank">
-                      <i className="open-link-logo"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="project-4" className="project">
+            <div id="project-6" className="project">
               <div className="project-description">
                 <h6 className="project-heading"></h6>
                 <p className="project-paragraph"></p>
@@ -365,13 +443,13 @@ const App = () => {
                 </a>
               </li>
             </ul>
-            <div onClick={toHero} id="arrow-up-wrapper">
+            <div onClick={toHero} id="arrow-up-wrapper" className="scroll-btn">
               <img id="red-arrow-up" alt=""></img>
             </div>
           </div>
         </footer>
       </main>
-    </>
+    </div>
   );
 };
 
